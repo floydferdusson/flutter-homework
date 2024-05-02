@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:simple_login/ui/password_textfield.dart';
 import 'package:simple_login/ui/screen.dart';
