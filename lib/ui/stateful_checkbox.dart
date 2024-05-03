@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class StatefulCheckbox extends StatefulWidget {
+class StatefulCheckboxF extends StatefulWidget {
   final String labelText;
-  const StatefulCheckbox({
+  const StatefulCheckboxF({
     super.key,
     required this.labelText,
   });
 
   @override
-  State<StatefulCheckbox> createState() => _StatefulCheckboxState();
+  State<StatefulCheckboxF> createState() => _StatefulCheckboxFState();
 }
 
-class _StatefulCheckboxState extends State<StatefulCheckbox> {
+class _StatefulCheckboxFState extends State<StatefulCheckboxF> {
   bool _isChecked = false; // This variable now lives here
 
   @override

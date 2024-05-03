@@ -1,21 +1,27 @@
 import 'package:flutter/material.dart';
 
-class PasswordTextField extends StatefulWidget {
-  const PasswordTextField({super.key});
+class PasswordTextFieldF extends StatefulWidget {
+  final TextEditingController controller;
+  const PasswordTextFieldF({
+    super.key,
+    required this.controller,
+  });
 
   @override
-  State<PasswordTextField> createState() => _PasswordTextFieldState();
+  State<PasswordTextFieldF> createState() => _PasswordTextFieldFState();
 }
 
-class _PasswordTextFieldState extends State<PasswordTextField> {
+class _PasswordTextFieldFState extends State<PasswordTextFieldF> {
   bool _obscureText = true; // Track password visibility
 
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: widget.controller,
       obscureText: _obscureText,
       decoration: InputDecoration(
         border: const OutlineInputBorder(),
+        prefixIcon: const Icon(Icons.lock),
         suffixIcon: IconButton(
           icon: Icon(
             _obscureText ? Icons.visibility_off : Icons.visibility,
