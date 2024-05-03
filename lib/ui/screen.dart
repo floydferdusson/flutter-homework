@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Screen extends StatelessWidget {
+class ScreenF extends StatelessWidget {
   final Widget child;
   final String imgPath;
 
-  const Screen({
+  const ScreenF({
     super.key,
     required this.child,
     required this.imgPath,
